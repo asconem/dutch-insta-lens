@@ -1,8 +1,8 @@
 // background.js - FINAL STABLE V1.5 (Google Cloud TTS Integration)
 
-const OCR_API_KEY = "K87517314188957";
-const DEEPL_API_KEY = "64b77eea-3df9-4747-abb6-b6488ae3e3a4:fx";
-const GOOGLE_API_KEY = "AIzaSyBjuYD1C9vJbvuRw_Sxz42YaASxE1IlJU0"; // <--- PASTE KEY HERE
+const OCR_API_KEY = "YOUR_OCR_API_KEY";
+const DEEPL_API_KEY = "YOUR_DEEPL_API_KEY";
+const GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY";
 
 browser.runtime.onMessage.addListener((request, sender) => {
     if (request.action === "scanImage") return processWithAPI(request.url);
