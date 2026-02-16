@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Dutch Insta-Lens (Fixed)",
+  "version": "8.0",
+  "description": "AR Dutch Translator: Google Neural TTS Integration",
+  "permissions": [
+    "activeTab",
+    "https://*.instagram.com/*",
+    "https://*.cdninstagram.com/*",
+    "https://*.fbcdn.net/*",
+    "https://api.ocr.space/*",
+    "https://api.mymemory.translated.net/*",
+    "https://api-free.deepl.com/*",
+    "https://translate.googleapis.com/*",
+    "https://texttospeech.googleapis.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "dutch-lens-gold-v2@self-hosted.com",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}

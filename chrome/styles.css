@@ -1,0 +1,76 @@
+/* styles.css - Full V1.3.0 */
+
+.insta-lens-overlay {
+    pointer-events: none;
+    background: transparent;
+}
+
+.word-box {
+    position: absolute;
+    border: 2px solid red;
+    background: rgba(255, 0, 0, 0.1);
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.word-box:hover {
+    background: rgba(255, 0, 0, 0.3) !important;
+    border-color: #ff3333 !important;
+}
+
+.box-delete-btn {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    background: #ff0000;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2147483647;
+    border: 2px solid white;
+}
+
+.resize-handle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 2px solid red;
+    z-index: 2147483647;
+}
+
+.dutch-tooltip {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    user-select: text;
+    color: black !important;
+}
+
+#editable-dutch {
+    padding: 8px;
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    margin-top: 5px;
+    outline: none;
+    min-height: 20px;
+    color: #333;
+}
+
+#editable-dutch:focus {
+    background: #ffffff !important;
+    border: 1px solid #007bff !important;
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
+}
+
+#scan-status-toast {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-family: sans-serif;
+    font-weight: bold;
+}
