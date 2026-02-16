@@ -4,8 +4,8 @@ if (typeof browser === "undefined") {
     var browser = chrome;
 }
 
-const OCR_API_KEY = "K87517314188957";
-const DEEPL_API_KEY = "64b77eea-3df9-4747-abb6-b6488ae3e3a4:fx";
+const OCR_API_KEY = "YOUR_OCR_API_KEY";
+const DEEPL_API_KEY = "YOUR_DEEPL_API_KEY";
 
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "scanImage") {
